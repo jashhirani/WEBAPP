@@ -6,13 +6,13 @@
     <title>Restaurant Details</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-        .detail-image {
+        .detail-container {
+            margin-top: 20px;
+        }
+        .carousel-item img {
             width: 100%;
             height: 400px;
             object-fit: cover;
-        }
-        .detail-container {
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -22,15 +22,30 @@
             <h2>Restaurant Details</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <asp:Image ID="RestaurantImage" runat="server" CssClass="detail-image" />
+                    <asp:PlaceHolder ID="RestaurantImagesPlaceHolder" runat="server"></asp:PlaceHolder>
                 </div>
-            <asp:Image ID="Image1" runat="server" />
-            <asp:Label ID="RestaurantName" runat="server" Text="" />
-            <asp:Label ID="RestaurantDescription" runat="server" Text="" />
-            <asp:HyperLink ID="RestaurantLink" runat="server">Visit Website</asp:HyperLink>
-       
+                <div class="col-md-6">
+                    <h3><asp:Label ID="RestaurantName" runat="server" CssClass="font-weight-bold" /></h3>
+                    <p><asp:Label ID="RestaurantDescription" runat="server" CssClass="text-muted" /></p>
+                    <asp:HyperLink ID="RestaurantLink" runat="server" CssClass="btn btn-primary" Text="Visit Website" />
+                    <div>
+                        <!-- Additional content for the restaurant -->
+                        <h4>Additional Information</h4>
+                        <ul>
+                            <li>Address: <asp:Label ID="RestaurantAddress" runat="server" /></li>
+                            <li>Contact: <asp:Label ID="RestaurantContact" runat="server" /></li>
+                            <li>Cuisine: <asp:Label ID="RestaurantCuisine" runat="server" /></li>
+                            <li>Hours: <asp:Label ID="RestaurantHours" runat="server" /></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </form>
+
+    <!-- Include jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

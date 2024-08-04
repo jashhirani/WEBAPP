@@ -24,13 +24,13 @@ namespace WEBAPP
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// ThingToDoImage control.
+        /// ThingToDoImagesPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ThingToDoImage;
+        protected global::System.Web.UI.WebControls.PlaceHolder ThingToDoImagesPlaceHolder;
 
         /// <summary>
         /// ThingToDoName control.
@@ -58,5 +58,32 @@ namespace WEBAPP
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink ThingToDoLink;
+
+        /// <summary>
+        /// ThingToDoLocation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ThingToDoLocation;
+
+        /// <summary>
+        /// ThingToDoDuration control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ThingToDoDuration;
+
+        /// <summary>
+        /// ThingToDoContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ThingToDoContact;
     }
 }

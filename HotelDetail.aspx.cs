@@ -17,7 +17,7 @@ namespace WEBAPP
                         case "1":
                             HotelName.Text = "The Ritz-Carlton";
                             HotelDescription.Text = "5-star luxury hotel with amazing amenities.";
-                            HotelLink.NavigateUrl = "https://example.com/ritz-carlton";
+                            HotelLink.NavigateUrl = "https://www.ritzcarlton.com/";
                             HotelLink.Text = "Visit The Ritz-Carlton Website";
                             HotelAmenities.Text = "Spa, Pool, Fitness Center, Free Wi-Fi";
                             HotelLocation.Text = "New York, NY";
@@ -32,7 +32,7 @@ namespace WEBAPP
                         case "2":
                             HotelName.Text = "Motel 6";
                             HotelDescription.Text = "Affordable hotel with basic facilities.";
-                            HotelLink.NavigateUrl = "https://example.com/motel-6";
+                            HotelLink.NavigateUrl = "https://www.motel6.com/en/home.html";
                             HotelLink.Text = "Visit Motel 6 Website";
                             HotelAmenities.Text = "Free Parking, Pet-Friendly, Free Wi-Fi";
                             HotelLocation.Text = "Los Angeles, CA";
@@ -40,14 +40,15 @@ namespace WEBAPP
                             GenerateCarousel(new string[]
                             {
                                 "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/31/c6/be/m-ext.jpg?w=1100&h=-1&s=1",
-                                "https://example.com/image2.jpg",
-                                "https://example.com/image3.jpg"
+                                "https://az712897.vo.msecnd.net/images/full/09c6faac-e11f-4929-aa4a-d84631a27f30.jpeg",
+                                "https://photos.prnewswire.com/prnfull/20151101/282647?max=400",
+                                "https://pix10.agoda.net/hotelImages/165/165993/165993_16052414360042671450.jpg?ca=6&ce=1&s=1024x768"
                             });
                             break;
                         case "3":
                             HotelName.Text = "Kimpton Hotel";
                             HotelDescription.Text = "Charming hotel with unique decor.";
-                            HotelLink.NavigateUrl = "https://example.com/kimpton-hotel";
+                            HotelLink.NavigateUrl = "https://www.guestreservations.com/kimpton-journeyman-hotel-milwaukee/booking";
                             HotelLink.Text = "Visit Kimpton Hotel Website";
                             HotelAmenities.Text = "Bar, Restaurant, Free Wi-Fi";
                             HotelLocation.Text = "San Francisco, CA";
@@ -55,8 +56,8 @@ namespace WEBAPP
                             GenerateCarousel(new string[]
                             {
                                 "https://digital.ihg.com/is/image/ihg/kimpton-tokyo-6874078618-16x9?",
-                                "https://example.com/image2.jpg",
-                                "https://example.com/image3.jpg"
+                                "http://russell-hotel-london.hotel-ds.com/data/Photos/OriginalPhoto/7006/700611/700611937.JPEG",
+                                "https://i.ytimg.com/vi/oMXUPcVwNas/maxresdefault.jpg"
                             });
                             break;
                             // Add more cases as needed
