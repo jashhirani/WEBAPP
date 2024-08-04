@@ -37,6 +37,66 @@
         .card-wrapper {
             margin-bottom: 20px;
         }
+        /* site.css */
+
+/* General body styling */
+body {
+    background-color: #2c2c2c;
+    color: #eaeaea;
+    font-family: Arial, sans-serif;
+}
+
+/* Card styling */
+.card {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #495057;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #eaeaea;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Category section styling */
+.category-section {
+    margin-bottom: 40px;
+}
+
+.card-wrapper {
+    margin-bottom: 20px;
+}
+
     </style>
     <div class="container">
         <h2>Categories</h2>
