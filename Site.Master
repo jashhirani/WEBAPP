@@ -17,9 +17,28 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
+
+    <style>
+        .navbar .profile-img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-left: auto;
+        }
+        .dashboard-section {
+            margin-top: 20px;
+        }
+        .dashboard-section h2 {
+            margin-top: 0;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
 </head>
 <body>
-    <form runat="server">
+    <form runat="server" id="BodyTag">
         <!-- ScriptManager for handling scripts -->
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -43,7 +62,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" runat="server" href="~/">Smart Travel Assistant</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse">
@@ -52,8 +71,9 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Search.aspx">Search</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Categories.aspx">Categories</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About.aspx">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact.aspx">Contact</a></li 
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact.aspx">Contact</a></li>
                     </ul>
+                    <a href="Profile.aspx"><img src="~/Images/profile.png" class="profile-img" alt="Profile Image" /></a>
                 </div>
             </div>
         </nav>
@@ -68,23 +88,14 @@
             </footer>
         </div>
     </form>
-
+     
     <!-- Scripts -->
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/jquery") %>
         <%: Scripts.Render("~/bundles/bootstrap") %>
     </asp:PlaceHolder>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

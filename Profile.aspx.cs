@@ -63,5 +63,8 @@ namespace WEBAPP
         {
             // Navigate to edit profile page or enable editing mode
         }
+        // Profile.aspx.cs
+        
+       
     }
 }
