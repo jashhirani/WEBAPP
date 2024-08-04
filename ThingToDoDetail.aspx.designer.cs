@@ -11,34 +11,52 @@ namespace WEBAPP
 {
 
 
-    public partial class Categories
+    public partial class ThingToDoDetail
     {
 
         /// <summary>
-        /// HotelsRepeater control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater HotelsRepeater;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// RestaurantsRepeater control.
+        /// ThingToDoImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RestaurantsRepeater;
+        protected global::System.Web.UI.WebControls.Image ThingToDoImage;
 
         /// <summary>
-        /// ThingsToDoRepeater control.
+        /// ThingToDoName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ThingsToDoRepeater;
+        protected global::System.Web.UI.WebControls.Label ThingToDoName;
+
+        /// <summary>
+        /// ThingToDoDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ThingToDoDescription;
+
+        /// <summary>
+        /// ThingToDoLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink ThingToDoLink;
     }
 }
