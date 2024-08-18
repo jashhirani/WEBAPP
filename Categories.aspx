@@ -3,101 +3,103 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-        .category-section {
-            margin-bottom: 40px;
-        }
-        .card {
-            display: flex;
-            flex-direction: column;
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .card-img-top {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .card-body {
-            flex: 1 1 auto;
-            padding: 15px;
-        }
-        .card-title {
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-        .card-text {
-            font-size: 1rem;
-            color: #555;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-            padding: 10px 20px;
-        }
-        .card-wrapper {
-            margin-bottom: 20px;
-        }
-        /* site.css */
+    .category-section {
+        margin-bottom: 40px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease; /* Smooth transition for hover effects */
+    }
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-body {
+        flex: 1 1 auto;
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+    .card-text {
+        font-size: 1rem;
+        color: #555;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+    }
+    .card-wrapper {
+        margin-bottom: 20px;
+    }
 
-/* General body styling */
-body {
-    background-color: #2c2c2c;
-    color: #eaeaea;
-    font-family: Arial, sans-serif;
-}
+    /* site.css */
+    /* General body styling */
+    body {
+        background-color: #2c2c2c;
+        color: #eaeaea;
+        font-family: Arial, sans-serif;
+    }
 
-/* Card styling */
-.card {
-    background-color: #343a40;
-    color: #f8f9fa;
-    border: 1px solid #495057;
-    transition: all 0.3s ease;
-}
+    /* Card styling */
+    .card {
+        background-color: #343a40;
+        color: #f8f9fa;
+        border: 1px solid #495057;
+        transition: all 0.3s ease;
+    }
 
-.card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
+    .card:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+        transform: scale(1.05); /* Slight zoom effect */
+        background-color: #495057; /* Slight color change on hover */
+    }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
 
-.card-body {
-    padding: 15px;
-}
+    .card-body {
+        padding: 15px;
+    }
 
-.card-title {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
 
-.card-text {
-    font-size: 1rem;
-    color: #eaeaea;
-}
+    .card-text {
+        font-size: 1rem;
+        color: #eaeaea;
+    }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-}
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+    }
 
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
-}
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
 
-/* Category section styling */
-.category-section {
-    margin-bottom: 40px;
-}
+    /* Category section styling */
+    .category-section {
+        margin-bottom: 40px;
+    }
 
-.card-wrapper {
-    margin-bottom: 20px;
-}
-
-    </style>
+    .card-wrapper {
+        margin-bottom: 20px;
+    }
+</style>
     <div class="container">
         <h2>Categories</h2>
         <p>Browse through various travel categories to find the best destinations and deals.</p>

@@ -64,7 +64,7 @@ body {
     <main class="container mt-5">
         <section class="text-center mb-5">
             <h1 class="display-4">Smart Travel Assistant Dashboard</h1>
-            <p class="lead">Your personalized travel planning starts here.</p>
+            <p class="lead">Your personalized travel planning starts here</p>
         </section>
 
         <div class="row text-center">

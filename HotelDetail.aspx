@@ -5,13 +5,84 @@
     <title>Hotel Details</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <style>
+        /* General Body Styling for Dark Mode */
+        body {
+            background-color: #2c2c2c; /* Dark background color */
+            color: #eaeaea; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #1e1e1e; /* Slightly lighter background for container */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
         .detail-container {
             margin-top: 20px;
         }
+
         .carousel-item img {
             width: 100%;
             height: 400px;
             object-fit: cover;
+        }
+
+        .font-weight-bold {
+            font-weight: bold;
+            color: #f8f9fa; /* Light text color for headers */
+        }
+
+        .text-muted {
+            color: #b0b0b0; /* Muted text color for descriptions */
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Additional Information Section Styling */
+        .additional-info {
+            background-color: #2c2c2c; /* Slightly darker background */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        .additional-info h4 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #007bff; /* Blue border under heading */
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #f8f9fa; /* Light color for heading */
+        }
+
+        .additional-info ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 0;
+        }
+
+        .additional-info li {
+            margin-bottom: 10px; /* Spacing between list items */
+            font-size: 1rem;
+            color: #eaeaea; /* Light color for list items */
+            background-color: #343a40; /* Slightly darker background for list items */
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-info li span {
+            font-weight: bold;
+            color: #007bff; /* Highlight key parts with blue color */
         }
     </style>
 </head>
